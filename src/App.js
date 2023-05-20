@@ -17,7 +17,10 @@ export default props => (
             flex: 1
         }}>
             <Stack.Navigator initialRouteName='TelaA'>
-                <Stack.Screen name='TelaA' component={TelaA} />
+                <Stack.Screen name='TelaA' 
+                    options={{title: 'informação Inicial'}}
+                    component={TelaA}
+                />
                 <Stack.Screen name='TelaB' component={TelaB} />
                 <Stack.Screen name='TelaC' component={TelaC} />
             </Stack.Navigator>
